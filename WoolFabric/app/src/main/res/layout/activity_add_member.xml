@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:theme="@style/newtheme"
+    android:background="@color/background"
+    tools:context=".Admin.AddMembers">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/capture"
+        app:tintMode="multiply"
+        android:elevation="10dp"
+        android:layout_width="200sp"
+        android:layout_height="200sp"
+        android:layout_marginTop="10dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/person"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:shapeAppearance="@style/circle" />
+
+    <LinearLayout
+        android:layout_width="0sp"
+        android:layout_height="0sp"
+        android:layout_marginTop="16dp"
+        android:orientation="vertical"
+        android:padding="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/capture">
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:boxStrokeColor="@color/white"
+            app:endIconTint="#FFFFFF"
+            app:hintTextColor="#FFFFFF"
+            app:startIconTint="#FFFFFF">
+
+            <EditText
+                android:id="@+id/name1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/addmemname"
+                android:inputType="textPersonName"
+                android:maxLines="1"
+
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:boxStrokeColor="@color/white"
+            app:hintTextColor="#FFF">
+
+            <EditText
+                android:id="@+id/mobile1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/addmemmob"
+                android:inputType="phone"
+                android:maxLength="10"
+                android:maxLines="1" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:boxStrokeColor="@color/white"
+            app:hintTextColor="#FFF">
+
+            <EditText
+                android:id="@+id/email1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/addmememail"
+                android:inputType="textEmailAddress"
+                android:maxLines="1" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:boxStrokeColor="@color/white"
+            app:endIconTint="#FFFFFF"
+            app:startIconTint="#EEFFFFFF">
+
+            <EditText
+                android:id="@+id/password1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/addmempass"
+                android:inputType="textPassword"
+                android:maxLines="1" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:boxStrokeColor="@color/white"
+            android:id="@+id/layoutname"
+            app:hintTextColor="#FFF">
+
+            <EditText
+                android:id="@+id/count1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/addmemcount"
+                android:inputType="phone"
+                android:maxLength="3"
+                android:maxLines="1" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="match_parent"
+            android:layout_height="50sp"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/curve"
+            android:backgroundTint="@color/white"
+            android:text="@string/addmemadd"
+            android:id="@+id/adding"
+            android:textColor="@color/black" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

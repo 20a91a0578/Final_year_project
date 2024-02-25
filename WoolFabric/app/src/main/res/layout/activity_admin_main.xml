@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    android:id="@+id/drawer"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".Admin.Admin_mainActivity">
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/imagedrawer"
+        android:layout_width="40sp"
+        android:layout_height="40sp"
+        android:src="@drawable/menu"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.08"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+        app:layout_constraintVertical_bias="0.07"
+        app:tint="@color/white"
+        tools:ignore="UnusedAttribute" />
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="0sp"
+        android:foregroundGravity="center"
+        android:layout_marginTop="20sp"
+        android:layout_height="0sp"
+        app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+
+        app:layout_constraintTop_toBottomOf="@+id/imagedrawer"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="match_parent"
+        app:menu="@menu/adminbottom"
+        app:backgroundTint="#6A6C6C"
+        android:background="@drawable/curve"
+        android:layout_margin="10sp"
+        android:outlineProvider="background"
+        app:itemIconTint="@color/itemselected"
+        app:itemTextColor="@color/itemselected"
+        app:itemIconSize="25sp"
+        app:itemPaddingTop="5sp"
+        android:splitMotionEvents="true"
+        android:fitsSystemWindows="true"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+<com.google.android.material.navigation.NavigationView
+    android:layout_width="200dp"
+    android:overScrollMode="never"
+    app:itemIconPadding="50sp"
+    app:itemTextColor="@color/white"
+    android:elevation="10sp"
+    app:itemIconTint="@color/white"
+    android:padding="10dp"
+    android:layout_marginTop="20sp"
+    android:background="@drawable/curve"
+android:outlineProvider="none"
+    android:backgroundTint="#585959"
+    android:id="@+id/naviview"
+    app:itemIconSize="20sp"
+    app:elevation="10dp"
+    app:itemRippleColor="@color/white"
+    app:menu="@menu/adminhome"
+    android:hapticFeedbackEnabled="false"
+    android:fitsSystemWindows="true"
+    android:layout_gravity="end"
+    android:layout_height="wrap_content"/>
+</androidx.drawerlayout.widget.DrawerLayout>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="10dp"
+    app:cardCornerRadius="10sp"
+    android:id="@+id/card2"
+    android:outlineProvider="none"
+    app:cardBackgroundColor="@color/background"
+    android:layout_height="wrap_content">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/userimage"
+
+        android:src="@drawable/adduser"
+        app:shapeAppearance="@style/circle"
+        android:layout_margin="10sp"
+        android:scaleType="centerCrop"
+        android:layout_gravity="center"
+        android:layout_width="100sp"
+        android:layout_height="100dp"/>
+<TextView
+    android:textSize="12sp"
+    android:paddingStart="10dp"
+    android:gravity="start"
+    android:layout_margin="10sp"
+    android:paddingTop="20sp"
+
+    android:id="@+id/details"
+    android:text="name "
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"/>
+</LinearLayout>
+</androidx.cardview.widget.CardView>

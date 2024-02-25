@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:background="@color/background"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Farmer.Functions.Additems">
+<androidx.cardview.widget.CardView
+    android:id="@+id/capture2"
+    app:cardElevation="30sp"
+    android:layout_width="200dp"
+    android:layout_gravity="center"
+    app:cardCornerRadius="100dp"
+    android:layout_height="200dp">
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/shapeableImageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black"
+        android:scaleType="center"
+        android:src="@drawable/woolproduct"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:shapeAppearance="@style/circle" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        android:src="@drawable/capture"
+        app:tint="#ABFFFFFF"
+        android:padding="5dp"
+        android:background="#94000000"
+        app:layout_constraintVertical_bias="1"
+        app:layout_constraintBottom_toBottomOf="@+id/shapeableImageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="ContentDescription" />
+</androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>
+<LinearLayout
+    android:padding="20sp"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:theme="@style/newtheme"
+>
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/inputlayout">
+
+        <EditText
+            android:id="@+id/productname"
+            style="@style/editext"
+            android:drawableStart="@drawable/catsize"
+            android:hint="@string/laddprod"
+            android:maxLength="100"
+            android:maxLines="1"
+            android:textColor="#fff"
+            android:textColorHint="#fff" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/inputlayout"
+        >
+
+        <EditText
+            android:id="@+id/basicqty"
+            style="@style/editext"
+            android:digits="0123456789"
+            android:drawableStart="@drawable/quantity"
+            android:hint="Basic Quantity"
+            android:inputType="phone"
+            android:maxLength="10"
+            android:maxLines="1"
+            android:textColor="#FFF"
+            android:textColorHint="#fff" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/inputlayout"
+        >
+
+        <EditText
+            android:id="@+id/rupees"
+            style="@style/editext"
+            android:digits="0123456789"
+            android:drawableStart="@drawable/rupee"
+            android:hint="Price"
+            android:inputType="phone"
+            android:maxLength="5"
+            android:maxLines="1"
+            android:textColor="#fff"
+            android:textColorHint="#fff" />
+    </com.google.android.material.textfield.TextInputLayout>
+<androidx.appcompat.widget.AppCompatButton
+    android:layout_width="150dp"
+    android:layout_marginTop="50sp"
+    android:layout_gravity="center"
+    android:elevation="10sp"
+    android:text="Add"
+    android:id="@+id/addit"
+    android:textColor="@color/black"
+    android:backgroundTint="#8AFFFFFF"
+    android:background="@drawable/curve"
+    android:layout_height="50dp"/>
+</LinearLayout></LinearLayout>

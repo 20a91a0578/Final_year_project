@@ -1,0 +1,94 @@
+<?php
+    $host = "localhost";
+$user = "u744590457_project";
+$pass = "woolFabric@123";
+$dbname = "u744590457_project";
+
+$con = mysqli_connect($host, $user, $pass,$dbname);  
+if(!$con){  
+  die('Could not connect: '.mysqli_connect_error());  
+}else{
+
+    
+    
+    
+function result($sql,$sql2){
+    $data=array();
+
+        if(mysqli_num_rows($sql)>0){
+        while($row=mysqli_fetch_assoc($sql)){
+            $data[]=$row;
+        }
+         if(!empty($sql2)){
+         $data2=array();
+         while($rows=mysqli_fetch_assoc($sql2)){
+            $data2[]=$rows;
+            }
+           echo json_encode(array("error"=>true,"message"=>"success","price"=>$data,"info"=>$data2));
+         }else{
+        echo json_encode(array("error"=>true,"message"=>"success","data"=>$data));
+         }
+    }else{
+        $data2=array()
+;   
+        if(!empty($sql2)){
+            echo json_encode(array("error"=>true,"message"=>"success","price"=>$data,"info"=>$data2));
+         }else{
+        echo json_encode(array("error"=>true,"message"=>"No Data 😊","data"=>$data));
+         }
+    }
+}
+    
+    $condition=$_POST['condition'];
+    $id=$_POST['id'];
+    
+if($condition==""){
+$mail=$_POST['mail'];
+$password=$_POST['password'];
+result(mysqli_query($con,"select * from woolfabric_users where mail='$mail'and password='$password'"),"");
+}else if($condition=="todayprice"){
+    $today=$_POST['today'];
+    result(mysqli_query($con,"select * from woolfabric_price where price!='' order by id desc  limit 1"),"");   
+}else if($condition=="getotherusers"){
+    result(mysqli_query($con,"select * from woolfabric_users where type='Farmer' or type='Industry'"),"");
+}else if($condition=="getdouble"){
+    result(mysqli_query($con,"select * from woolfabric_price order by id desc limit 1"),mysqli_query($con,"select * from woolfabric_info order by id desc "));
+}else if($condition=="getmyproducts"){
+    result(mysqli_query($con,"select * from woolfabric_product where farmerid='$id' order by id desc"),"");
+}else if($condition=="getfarmer"){
+    result(mysqli_query($con,"select * from woolfabric_users where type='Farmer'order by id desc"),"");
+}else if($condition=="getmyorders"){
+    result(mysqli_query($con,"select distinct wu.image,wu.name,wu.mobile,wu.mail,wo.orderid,wo.ordereddate,wo.paymentstatus from woolfabric_users as wu LEFT join woolfabric_orders as wo on wu.id=wo.farmerid where wo.userid='$id'"),"");
+}else if($condition=="getorders"){
+     result(mysqli_query($con,"SELECT DISTINCT wp.id,wp.pname,wo.cost,wp.image, wo.qty FROM `woolfabric_product` as wp LEFT JOIN woolfabric_orders as wo on wo.productid=wp.id where wo.orderid='$id'"),"");   
+}else if($condition=="getfarmerside"){
+     result(mysqli_query($con,"select distinct wu.image,wu.name,wu.mobile,wu.mail,wo.orderid,wo.ordereddate,wo.paymentstatus from woolfabric_users as wu LEFT join woolfabric_orders as wo on wu.id=wo.userid where wo.userid='$id' or wo.farmerid='$id'"),"");
+}else if($condition=="getindustries"){
+    result(mysqli_query($con,"select * from woolfabric_users where type='Industry' order by id desc"),"");
+}else if($condition=="getmyrequests"){  
+        result(mysqli_query($con,"select * from woolfabric_requests where toid='$id' or fromid='$id' order by id desc"),"");
+}else if($condition=="getuser"){
+        result(mysqli_query($con,"select * from woolfabric_users where id='$id'"),"");
+}else if($condition=="getfarmerrequest"){
+            result(mysqli_query($con,"select * from woolfabric_requests where toid='$id' order by id desc"),"");
+}else if($condition=="getindustryrequests"){
+            result(mysqli_query($con,"select * from woolfabric_requests where fromid='$id' order by id desc"),"");
+}else if($condition=="count"){
+    result(mysqli_query($con,"SELECT type,COUNT(type)as 'count' from woolfabric_info GROUP by type UNION select 'Price' , COUNT(id) as 'count' from woolfabric_price where price!='' "),"");
+}else if($condition=="getboth"){
+      result(mysqli_query($con,"select * from woolfabric_users where type='Farmer' or type='Industry' order by id desc"),"");
+}else if($condition=="getcompleted"){
+    result(mysqli_query($con,"select wr.woolweight,wr.bidprice,wr.content,wr.requestsdate,ws.name,ws.mobile,ws.image,wr.id from woolfabric_requests as wr join woolfabric_users as ws on wr.fromid=ws.id or wr.toid=ws.id where ws.type='Farmer' and wr.status='completed' and (wr.toid='$id' or wr.fromid='$id' )order by wr.id desc"),"");
+}else if($condition=="getreport"){
+        $dateof=$_POST['dateof'];
+          result(mysqli_query($con,"select * from woolfabric_lifecycle where requestid='$id' "),"");
+
+}
+}?>
+
+
+
+
+
+backendURL:https://srv1127-files.hstgr.io/ad5b70f707c75258/files/public_html/
+

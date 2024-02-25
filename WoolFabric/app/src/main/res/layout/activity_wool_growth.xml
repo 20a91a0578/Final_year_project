@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/background"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:ignore="HardcodedText"
+    tools:context=".Admin.Info.Addinformation">
+    
+    <ImageView
+    android:outlineProvider="background"
+        android:layout_margin="10dp"
+    android:elevation="10sp"
+    android:src="@drawable/addinfo"
+        android:id="@+id/selectfor"
+    android:layout_width="wrap_content"
+    android:layout_height="200sp"/>
+    <TextView
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:text="Get image from gallery"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:hint="Title"
+        android:textColorHint="#79000000"
+        android:id="@+id/title2"
+        style="@style/edittext"
+android:inputType="textCapSentences"
+        android:layout_height="50sp" />
+    <EditText
+
+        android:textColorHint="#79000000"
+        android:id="@+id/decri"
+        android:hint="Write Your Story"
+        android:textColor="#6C1F1F"
+        android:layout_marginTop="20sp"
+        android:layout_width="match_parent"
+        android:layout_height="150sp"
+        android:gravity="start|bottom"
+    android:paddingStart="20sp"
+        android:paddingBottom="20sp"
+        android:backgroundTint="@color/white"
+        android:background="@drawable/curve"
+        />
+    <EditText
+        android:hint="You tube link"
+        android:maxLines="10"
+
+        android:textColorHint="#79000000"
+        android:id="@+id/youtubelink"
+        android:inputType="textUri"
+        android:layout_height="50sp"
+        style="@style/edittext"/>
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="match_parent"
+        android:layout_marginTop="20sp"
+        android:text="Upload"
+        android:textAllCaps="false"
+
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:backgroundTint="@color/white"
+        android:id="@+id/upload"
+        android:background="@drawable/curve"
+        android:layout_height="55dp"/>
+</LinearLayout>

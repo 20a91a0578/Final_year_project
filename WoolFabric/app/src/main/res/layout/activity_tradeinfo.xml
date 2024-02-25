@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="HardcodedText"
+    android:padding="20sp"
+    android:orientation="vertical"
+    android:background="@color/background"
+    android:gravity="center"
+    tools:context=".Admin.Info.Price">
+
+
+        <TextView
+            android:id="@+id/yesterday"
+            android:textSize="30sp"
+            android:gravity="center"
+            android:text="Last Price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:ignore="HardcodedText" />
+    <EditText
+        android:hint="Today Price"
+        android:gravity="center"
+        android:inputType="phone"
+        android:id="@+id/price"
+android:textColor="@color/black"
+        android:textColorHint="#79000000"
+        android:digits="0123456789"
+        android:layout_marginTop="20sp"
+        android:backgroundTint="@color/white"
+        android:background="@drawable/curve"
+        android:paddingStart="20sp"
+        android:paddingEnd="20sp"
+        android:textSize="17dp"
+        android:layout_width="wrap_content"
+        android:layout_height="50sp"
+      />
+
+    <TextView
+        android:layout_marginTop="50sp"
+        android:textSize="30sp"
+        android:gravity="center"
+        android:text="0.00%"
+        android:id="@+id/percentage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="HardcodedText" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/upload"
+        android:layout_width="match_parent"
+        android:layout_height="55sp"
+        android:layout_marginTop="30sp"
+        android:background="@drawable/curve"
+        android:backgroundTint="@color/white"
+        android:text="Upload"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+</LinearLayout>

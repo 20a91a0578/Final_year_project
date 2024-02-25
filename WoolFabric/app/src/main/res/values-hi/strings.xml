@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="welcome_text">పునఃస్వాగతం</string>
+    <string name="please_login">దయచేసి లాగిన్ చేయండి</string>
+    <string name="lemail">ఇమెయిల్</string>
+    <string name="lpassword">ఇమెయిల్</string>
+    <string name="lcreatefa">రైతు A/cని సృష్టించండి</string>
+    <string name="lcreateacc">ఎకౌంటు సృష్టించు</string>
+    <string name="lcreatein">పరిశ్రమ A/cని సృష్టించండి</string>
+    <string name="lcontinue">కొనసాగించు</string>
+    <string name="addmemname">పేరు</string>
+    <string name="addmemmob">మొబైల్ నంబర్</string>
+    <string name="addmememail">ఇమెయిల్-ఐడి</string>
+    <string name="addmempass">పాస్వర్డ్</string>
+    <string name="addmemcount">ఎన్ని గొర్రెలు, మేకలు, అల్పాకాస్ మరియు కుందేళ్ళు?</string>
+    <string name="addmemadd">జోడించు</string>
+    <string name="laddprod">ఉత్పత్తి నామం</string>
+
+
+</resources>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:theme="@style/newtheme"
+    android:background="@color/background"
+
+    tools:ignore="HardcodedText,Autofill,TextFields"
+    tools:context=".Farmer.Functions.UpdateProduct">
+<ImageView
+    android:layout_width="match_parent"
+    android:scaleType="centerCrop"
+    android:id="@+id/detailimage2"
+    android:src="@drawable/woolproduct"
+    android:layout_height="250sp"/>
+
+        <TextView
+            android:id="@+id/pname"
+            android:hint="Product name"
+            android:textSize="25sp"
+            android:layout_margin="10sp"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+             />
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/inputlayout"
+        app:hintEnabled="true"
+        app:expandedHintEnabled="true"
+        android:layout_margin="10sp"
+        >
+        <EditText
+            android:hint="Left quantity"
+            style="@style/editext"
+            android:maxLines="1"
+            android:maxLength="10"
+            android:inputType="phone"
+            android:id="@+id/leftqty"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/inputlayout"
+        app:hintEnabled="true"
+        app:expandedHintEnabled="true"
+        android:layout_margin="10sp"
+        >
+        <EditText
+
+            android:hint="Cost"
+            style="@style/editext"
+            android:maxLength="3"
+            android:maxLines="1"
+            android:inputType="phone"
+            android:id="@+id/cost"
+       />
+    </com.google.android.material.textfield.TextInputLayout>
+<androidx.appcompat.widget.AppCompatButton
+    android:layout_width="150dp"
+    android:layout_gravity="center"
+    android:textSize="19sp"
+    android:layout_marginTop="20sp"
+    android:text="Update"
+    android:id="@+id/updatebtn"
+    android:textColor="@color/black"
+        android:textAllCaps="false"
+    android:backgroundTint="#ABFFFFFF"
+    android:background="@drawable/curve"
+    android:layout_height="50sp"/>
+</LinearLayout>
