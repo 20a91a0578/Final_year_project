@@ -39,6 +39,11 @@
     <string name="Password">Password</string>
     <string name="CreateAccount">Create Account</string>
     <string name="acc_Or">Or</string>
+    <string name="Hi_there">Hi there!</string>
+    <string name="GetStarted">Get Started</string>
+
+    <string name="addquan">Basic Quantity</string>
+    <string name="addprice">Price</string>
     <string name="acc_login">Login</string>
     <string name="Last_Price">Last Price</string>
     <string name="Today_Price">Today Price</string>

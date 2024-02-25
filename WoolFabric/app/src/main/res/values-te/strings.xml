@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+
+
     <string name="welcome_text">పునఃస్వాగతం</string>
     <string name="please_login">దయచేసి లాగిన్ చేయండి</string>
     <string name="lemail">ఇమెయిల్</string>
@@ -21,6 +23,8 @@
     <string name="SendRequest">అభ్యర్థన పంపు</string>
     <string name="IndustryRequests">పరిశ్రమ అభ్యర్థనలు</string>
     <string name="Logout">లాగ్అవుట్</string>
+    <string name="addquan">ప్రాథమిక పరిమాణం</string>
+    <string name="addprice">ధర</string>
     <string name="RequestsReceived">అభ్యర్థనలు స్వీకరించబడ్డాయి</string>
     <string name="kg">కిలొగ్రామ్</string>
     <string name="Per_kg_Wool">కిలో ఉన్ని</string>
