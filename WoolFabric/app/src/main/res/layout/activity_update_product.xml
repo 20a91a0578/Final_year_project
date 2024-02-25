@@ -11,21 +11,21 @@
 
     tools:ignore="HardcodedText,Autofill,TextFields"
     tools:context=".Farmer.Functions.UpdateProduct">
-<ImageView
-    android:layout_width="match_parent"
-    android:scaleType="centerCrop"
-    android:id="@+id/detailimage2"
-    android:src="@drawable/woolproduct"
-    android:layout_height="250sp"/>
+    <ImageView
+        android:layout_width="match_parent"
+        android:scaleType="centerCrop"
+        android:id="@+id/detailimage2"
+        android:src="@drawable/woolproduct"
+        android:layout_height="250sp"/>
 
-        <TextView
-            android:id="@+id/pname"
-            android:hint="@string/Product_name"
-            android:textSize="25sp"
-            android:layout_margin="10sp"
-            android:layout_height="wrap_content"
-            android:layout_width="match_parent"
-             />
+    <TextView
+        android:id="@+id/pname"
+        android:hint="@string/Product_name"
+        android:textSize="25sp"
+        android:layout_margin="10sp"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        />
     <com.google.android.material.textfield.TextInputLayout
         style="@style/inputlayout"
         app:hintEnabled="true"
@@ -33,7 +33,7 @@
         android:layout_margin="10sp"
         >
         <EditText
-            android:hint="string/Left_quantity"
+            android:hint="@string/Left_quantity"
             style="@style/editext"
             android:maxLines="1"
             android:maxLength="10"
@@ -55,18 +55,18 @@
             android:maxLines="1"
             android:inputType="phone"
             android:id="@+id/cost"
-       />
+            />
     </com.google.android.material.textfield.TextInputLayout>
-<androidx.appcompat.widget.AppCompatButton
-    android:layout_width="150dp"
-    android:layout_gravity="center"
-    android:textSize="19sp"
-    android:layout_marginTop="20sp"
-    android:text="@string/Update"
-    android:id="@+id/updatebtn"
-    android:textColor="@color/black"
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="150dp"
+        android:layout_gravity="center"
+        android:textSize="19sp"
+        android:layout_marginTop="20sp"
+        android:text="@string/Update"
+        android:id="@+id/updatebtn"
+        android:textColor="@color/black"
         android:textAllCaps="false"
-    android:backgroundTint="#ABFFFFFF"
-    android:background="@drawable/curve"
-    android:layout_height="50sp"/>
+        android:backgroundTint="#ABFFFFFF"
+        android:background="@drawable/curve"
+        android:layout_height="50sp"/>
 </LinearLayout>

@@ -8,91 +8,91 @@
     tools:context=".Farmer.Functions.UpdateMe"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-<LinearLayout
-    android:layout_width="match_parent"
-    android:layout_height="700dp"
-    tools:ignore="HardcodedText,TextFields,Autofill"
-    android:orientation="vertical"
-   >
-
-    <ImageView
-        android:id="@+id/imageView7"
-        android:scaleType="centerCrop"
-        android:src="@drawable/woolproduct"
-        android:layout_width="match_parent"
-        android:layout_height="250sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
     <LinearLayout
         android:layout_width="match_parent"
-        android:padding="20sp"
-        android:layout_height="match_parent"
+        android:layout_height="700dp"
+        tools:ignore="HardcodedText,TextFields,Autofill"
         android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView7">
+        >
 
-        <com.google.android.material.textfield.TextInputLayout
-            style="@style/inputlayout">
-<EditText
-    android:hint="@string/per_name"
-    android:inputType="textPersonName"
-    android:id="@+id/uname"
-    style="@style/editext"
-    />
-        </com.google.android.material.textfield.TextInputLayout>
-        <com.google.android.material.textfield.TextInputLayout
-            style="@style/inputlayout">
-            <EditText
-                android:hint="@string/per_email"
-                android:inputType="textEmailAddress"
-                android:id="@+id/umail"
-                style="@style/editext"/>
-        </com.google.android.material.textfield.TextInputLayout>
-        <com.google.android.material.textfield.TextInputLayout
-            style="@style/inputlayout">
-            <EditText
-                android:digits="0123456789"
-                android:hint="@string/per_mobile"
-                android:inputType="phone"
-                android:maxLength="10"
-                android:id="@+id/umobile"
-                style="@style/editext"/>
-        </com.google.android.material.textfield.TextInputLayout>
-        <com.google.android.material.textfield.TextInputLayout
-            style="@style/inputlayout">
-            <EditText
-                android:hint="@string/per_password"
-                android:inputType="textPassword"
-                android:id="@+id/upassword"
-                style="@style/editext"
- />
-        </com.google.android.material.textfield.TextInputLayout>
-        <com.google.android.material.textfield.TextInputLayout
-            style="@style/inputlayout">
-            <EditText
-                android:maxLength="20"
-                android:digits="0123456789"
-                android:inputType="phone"
-                android:id="@+id/howmany"
-                android:hint="@string/no_sheeps"
-                style="@style/editext"
-                />
-        </com.google.android.material.textfield.TextInputLayout>
-<androidx.appcompat.widget.AppCompatButton
-    android:layout_width="match_parent"
-    android:backgroundTint="@color/white"
-    android:background="@drawable/curve"
-    android:layout_marginTop="50sp"
-    android:textSize="20sp"
-    android:id="@+id/updatebtn2"
-    android:textAllCaps="false"
-    android:text="@string/update"
-    android:textColor="@color/black"
-    android:layout_height="50sp"/>
+        <ImageView
+            android:id="@+id/imageView7"
+            android:scaleType="centerCrop"
+            android:src="@drawable/woolproduct"
+            android:layout_width="match_parent"
+            android:layout_height="250sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:padding="20sp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView7">
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/inputlayout">
+                <EditText
+                    android:hint="@string/per_name"
+                    android:inputType="textPersonName"
+                    android:id="@+id/uname"
+                    style="@style/editext"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/inputlayout">
+                <EditText
+                    android:hint="@string/per_email"
+                    android:inputType="textEmailAddress"
+                    android:id="@+id/umail"
+                    style="@style/editext"/>
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/inputlayout">
+                <EditText
+                    android:digits="0123456789"
+                    android:hint="@string/per_mobile"
+                    android:inputType="phone"
+                    android:maxLength="10"
+                    android:id="@+id/umobile"
+                    style="@style/editext"/>
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/inputlayout">
+                <EditText
+                    android:hint="@string/per_password"
+                    android:inputType="textPassword"
+                    android:id="@+id/upassword"
+                    style="@style/editext"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/inputlayout">
+                <EditText
+                    android:maxLength="20"
+                    android:digits="0123456789"
+                    android:inputType="phone"
+                    android:id="@+id/howmany"
+                    android:hint="@string/no_sheeps"
+                    style="@style/editext"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="match_parent"
+                android:backgroundTint="@color/white"
+                android:background="@drawable/curve"
+                android:layout_marginTop="50sp"
+                android:textSize="20sp"
+                android:id="@+id/updatebtn2"
+                android:textAllCaps="false"
+                android:text="@string/update"
+                android:textColor="@color/black"
+                android:layout_height="50sp"/>
+        </LinearLayout>
     </LinearLayout>
-</LinearLayout>
 </ScrollView>

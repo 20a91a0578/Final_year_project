@@ -28,7 +28,33 @@
     <string name="addmemcount">How Many sheeps, goats, alpacas and rabbits ?</string>
     <string name="addmemadd">Add</string>
     <string name="laddprod">Product name</string>
-
+<string name="Orders">Orders</string>
+<string name="upload">Upload</string>
+    <string name="Per_kg_Wool">Per_kg_Wool</string>
+    <string name="Description">Description</string>
+    <string name="Send_requests">Send Requests</string>
+    <string name="Name">Name</string>
+    <string name="Mobile_Num">Mobile Number</string>
+    <string name="Mail_id">Mail ID</string>
+    <string name="Password">Password</string>
+    <string name="CreateAccount">Create Account</string>
+    <string name="acc_Or">Or</string>
+    <string name="acc_login">Login</string>
+    <string name="Last_Price">Last Price</string>
+    <string name="Today_Price">Today Price</string>
+    <string name="per_name">Name</string>
+    <string name="per_email">Email</string>
+    <string name="per_mobile">Mobile</string>
+    <string name="per_password">Password</string>
+    <string name="no_sheeps">No of Sheeps</string>
+    <string name="update">Update</string>
+    <string name="Product_name">Product Name</string>
+    <string name="Left_quantity">Left Quantity</string>
+    <string name="Cost">Cost</string>
+    <string name="Update">Update</string>
+    <string name="Call">CALL</string>
+    <string name="ldetails">Details</string>
+    <string name="Reference">Reference</string>
 
     <string name="title_activity_login">LoginActivity</string>
     <string name="prompt_email">Email</string>
@@ -40,7 +66,14 @@
     <string name="invalid_password">Password must be >5 characters</string>
     <string name="login_failed">"Login failed"</string>
     <string name="products"><u>Products</u></string>
-
+    <string name="sentrequest">Requests Sent</string>
+    <string name="refi">Requests From Industry</string>
+    <string name="Logout">Logout</string>
+    <string name="Requests">Requests</string>
+    <string name="SendRequest">SendRequest</string>
+    <string name="kg">kg</string>
+    <string name="IndustryRequests">IndustryRequests</string>
+    <string name="RequestsReceived">Requests Received</string>
     <style name="circle">
         <item name="cornerFamily">rounded</item>
         <item name="cornerSize">50%</item>
