@@ -26,7 +26,7 @@
         <TextView
             android:textColor="@color/black"
             android:gravity="center"
-            android:text="Orders"
+            android:text="@string/Orders"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
              />
@@ -53,7 +53,7 @@
         <TextView
             android:textColor="@color/black"
             android:gravity="center"
-            android:text="Requests"
+            android:text="@string/Requests"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             />
@@ -79,7 +79,7 @@
         <TextView
             android:textColor="@color/black"
             android:gravity="center"
-            android:text="Send Request"
+            android:text="@string/SendRequest"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             />
@@ -107,7 +107,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:gravity="center"
-            android:text="Industry Requests"
+            android:text="@string/IndustryRequests"
             android:textColor="@color/black" />
     </LinearLayout>
     <View
@@ -133,7 +133,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:gravity="center"
-            android:text="Logout"
+            android:text="@string/Logout"
             android:textColor="@color/black" />
     </LinearLayout>
     <View

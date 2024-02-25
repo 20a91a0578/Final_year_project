@@ -38,7 +38,7 @@
         <com.google.android.material.textfield.TextInputLayout
             style="@style/inputlayout">
 <EditText
-    android:hint="Name"
+    android:hint="@string/per_name"
     android:inputType="textPersonName"
     android:id="@+id/uname"
     style="@style/editext"
@@ -47,7 +47,7 @@
         <com.google.android.material.textfield.TextInputLayout
             style="@style/inputlayout">
             <EditText
-                android:hint="Email"
+                android:hint="@string/per_email"
                 android:inputType="textEmailAddress"
                 android:id="@+id/umail"
                 style="@style/editext"/>
@@ -56,7 +56,7 @@
             style="@style/inputlayout">
             <EditText
                 android:digits="0123456789"
-                android:hint="Mobile"
+                android:hint="@string/per_mobile"
                 android:inputType="phone"
                 android:maxLength="10"
                 android:id="@+id/umobile"
@@ -65,7 +65,7 @@
         <com.google.android.material.textfield.TextInputLayout
             style="@style/inputlayout">
             <EditText
-                android:hint="Password"
+                android:hint="@string/per_password"
                 android:inputType="textPassword"
                 android:id="@+id/upassword"
                 style="@style/editext"
@@ -78,7 +78,7 @@
                 android:digits="0123456789"
                 android:inputType="phone"
                 android:id="@+id/howmany"
-                android:hint="How Many Sheep are there?"
+                android:hint="@string/no_sheeps"
                 style="@style/editext"
                 />
         </com.google.android.material.textfield.TextInputLayout>
@@ -90,7 +90,7 @@
     android:textSize="20sp"
     android:id="@+id/updatebtn2"
     android:textAllCaps="false"
-    android:text="Update"
+    android:text="@string/update"
     android:textColor="@color/black"
     android:layout_height="50sp"/>
     </LinearLayout>

@@ -20,7 +20,7 @@
 
         <TextView
             android:id="@+id/pname"
-            android:hint="Product name"
+            android:hint="@string/Product_name"
             android:textSize="25sp"
             android:layout_margin="10sp"
             android:layout_height="wrap_content"
@@ -33,7 +33,7 @@
         android:layout_margin="10sp"
         >
         <EditText
-            android:hint="Left quantity"
+            android:hint="string/Left_quantity"
             style="@style/editext"
             android:maxLines="1"
             android:maxLength="10"
@@ -49,7 +49,7 @@
         >
         <EditText
 
-            android:hint="Cost"
+            android:hint="@string/Cost"
             style="@style/editext"
             android:maxLength="3"
             android:maxLines="1"
@@ -62,7 +62,7 @@
     android:layout_gravity="center"
     android:textSize="19sp"
     android:layout_marginTop="20sp"
-    android:text="Update"
+    android:text="@string/Update"
     android:id="@+id/updatebtn"
     android:textColor="@color/black"
         android:textAllCaps="false"

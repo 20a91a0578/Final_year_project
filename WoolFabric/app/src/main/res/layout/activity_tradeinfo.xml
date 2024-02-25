@@ -17,12 +17,12 @@
             android:id="@+id/yesterday"
             android:textSize="30sp"
             android:gravity="center"
-            android:text="Last Price"
+            android:text="@string/Last_Price"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             tools:ignore="HardcodedText" />
     <EditText
-        android:hint="Today Price"
+        android:hint="@string/Today_Price"
         android:gravity="center"
         android:inputType="phone"
         android:id="@+id/price"

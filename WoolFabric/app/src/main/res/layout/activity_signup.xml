@@ -25,7 +25,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="12dp"
-        android:text="Hi there!"
+        android:text="@string/Hi_there"
         android:textColor="#D0FFFFFF"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -38,7 +38,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="5sp"
-        android:text="Let's Get Started"
+        android:text="@string/GetStarted"
         android:textSize="25sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
@@ -56,7 +56,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView3">
 <EditText
-    android:hint="Name"
+    android:hint="@string/Name"
     android:id="@+id/name"
     android:drawableStart="@drawable/ic_baseline_person_outline_24"
     android:textColorHint="#000"
@@ -65,7 +65,7 @@
         <EditText
             android:inputType="phone"
             android:layout_marginTop="10dp"
-            android:hint="Mobile Number"
+            android:hint="string/Mobile_Num"
             android:textColorHint="#000"
             android:id="@+id/mobile"
             android:drawableTint="@color/black"
@@ -74,7 +74,7 @@
             android:maxLength="10"
             />
         <EditText
-            android:hint="Mail-id"
+            android:hint="string/Mail_id"
             android:drawableStart="@drawable/ic_baseline_mail_outline_24"
             style="@style/edittext"
             android:id="@+id/mail"
@@ -82,7 +82,7 @@
             android:inputType="textEmailAddress"
             />
         <EditText
-            android:hint="Password"
+            android:hint="string/Password"
             android:id="@+id/pass"
             android:drawableStart="@drawable/ic_key_fill0_wght400_grad0_opsz24"
             android:inputType="textPassword"
@@ -92,7 +92,7 @@
         <androidx.appcompat.widget.AppCompatButton
             app:cardCornerRadius="35sp"
             android:layout_width="match_parent"
-            android:text="Create an Account"
+            android:text="@string/CreateAccount"
             android:layout_height="60sp"
             android:id="@+id/signupbtn"
             android:textAllCaps="false"
@@ -111,7 +111,7 @@
                 android:background="@drawable/dots"
                 android:layout_height="5dp"/>
             <TextView
-                android:text="Or"
+                android:text="@string/acc_Or"
                 android:gravity="center"
                 android:layout_weight="0.1"
                 android:layout_width="0sp"
@@ -134,7 +134,7 @@
             app:cardBackgroundColor="#81F3F2F2">
             <TextView
                 android:layout_gravity="center"
-                android:text="Login"
+                android:text="@string/acc_login"
                 android:textSize="18sp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"/>

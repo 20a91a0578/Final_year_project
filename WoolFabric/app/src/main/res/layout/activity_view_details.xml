@@ -35,7 +35,7 @@
         android:layout_margin="10sp"
         android:background="@drawable/curve"
         android:backgroundTint="@color/white"
-        android:text="Call"
+        android:text="@string/Call"
         android:textColor="@color/black"
         android:id="@+id/call"
         app:layout_constraintBottom_toTopOf="@+id/total"
