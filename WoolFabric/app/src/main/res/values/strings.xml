@@ -60,7 +60,6 @@
     <string name="Call">CALL</string>
     <string name="ldetails">Details</string>
     <string name="Reference">Reference</string>
-
     <string name="title_activity_login">LoginActivity</string>
     <string name="prompt_email">Email</string>
     <string name="prompt_password">Password</string>
@@ -79,6 +78,20 @@
     <string name="kg">kg</string>
     <string name="IndustryRequests">IndustryRequests</string>
     <string name="RequestsReceived">Requests Received</string>
+
+    <string name="details">Details</string>
+    <string name="stock_over">Stock Over</string>
+    <string name="dummy_text">Lorem Ipsum is simply dummy text of the printing</string>
+    <string name="Hi_Test">Hi Test</string>
+    <string name="health">Health</string>
+    <string name="getimg">Get image from gallery</string>
+    <string name="acc_Title">Title</string>
+    <string name="story">Write Your Story</string>
+    <string name="ylink">You tube link</string>
+    <string name="Orietaition">Orietaition</string>
+    <string name="pay">Pay</string>
+
+
     <style name="circle">
         <item name="cornerFamily">rounded</item>
         <item name="cornerSize">50%</item>

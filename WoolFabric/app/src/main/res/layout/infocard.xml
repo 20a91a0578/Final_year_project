@@ -34,7 +34,7 @@
             android:layout_marginEnd="20sp"
             android:layout_marginBottom="22dp"
 
-            android:text="Lorem Ipsum is simply dummy text of the printing"
+            android:text="@string/dummy_text"
             android:textSize="20sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"

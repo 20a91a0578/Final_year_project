@@ -29,7 +29,7 @@
     <TextView
         android:padding="10sp"
         android:id="@+id/details6"
-        android:text="details"
+        android:text="@string/details"
         android:textSize="12sp"
         android:layout_width="0sp"
         android:layout_height="0sp"
@@ -97,7 +97,7 @@
             android:textColor="@color/white"
             android:gravity="center"
 
-            android:text="Add"
+            android:text="@string/addmemadd"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             tools:ignore="HardcodedText" />
@@ -108,7 +108,7 @@
         android:id="@+id/stockover"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="stock over"
+        android:text="@string/stock_over"
         android:textColor="@color/red"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"

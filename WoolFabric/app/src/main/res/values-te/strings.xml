@@ -56,4 +56,15 @@
     <string name="ldetails">వివరాలు</string>
     <string name="Reference">సూచన</string>
     <string name="refi">పరిశ్రమ నుండి అభ్యర్థనలు</string>
+    <string name="details">Details</string>
+    <string name="stock_over">స్టాక్ ఓవర్</string>
+    <string name="dummy_text">లోరెమ్ ఇప్సమ్ అనేది ప్రింటింగ్ యొక్క డమ్మీ టెక్స్ట్</string>
+    <string name="Hi_Test">హాయ్ టెస్ట్</string>
+    <string name="health">ఆరోగ్యం</string>
+    <string name="getimg">గ్యాలరీ నుండి చిత్రాన్ని పొందండి</string>
+    <string name="acc_Title">శీర్షిక</string>
+    <string name="story">మీ కథను వ్రాయండి</string>
+    <string name="ylink">Youtube లింక్</string>
+    <string name="Orietaition">ఓరియంటేషన్</string>
+    <string name="pay">చెల్లించండి</string>
 </resources>

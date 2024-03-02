@@ -29,7 +29,7 @@
     android:paddingTop="20sp"
 
     android:id="@+id/details"
-    android:text="name "
+    android:text="@string/Name"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"/>
 </LinearLayout>

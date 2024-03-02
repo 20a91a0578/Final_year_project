@@ -23,11 +23,11 @@
         android:textColor="@color/white"
         android:textSize="18sp"
         android:gravity="center"
-        android:text="Get image from gallery"
+        android:text="@string/getimg"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
     <EditText
-        android:hint="Title"
+        android:hint="@string/acc_Title"
         android:textColorHint="#79000000"
         android:id="@+id/title2"
         style="@style/edittext"
@@ -37,7 +37,7 @@ android:inputType="textCapSentences"
 
         android:textColorHint="#79000000"
         android:id="@+id/decri"
-        android:hint="Write Your Story"
+        android:hint="@string/story"
         android:textColor="#6C1F1F"
         android:layout_marginTop="20sp"
         android:layout_width="match_parent"
@@ -49,7 +49,7 @@ android:inputType="textCapSentences"
         android:background="@drawable/curve"
         />
     <EditText
-        android:hint="You tube link"
+        android:hint="@string/ylink"
         android:maxLines="10"
 
         android:textColorHint="#79000000"
@@ -60,7 +60,7 @@ android:inputType="textCapSentences"
     <androidx.appcompat.widget.AppCompatButton
         android:layout_width="match_parent"
         android:layout_marginTop="20sp"
-        android:text="Upload"
+        android:text="@string/upload"
         android:textAllCaps="false"
 
         android:textSize="20sp"
