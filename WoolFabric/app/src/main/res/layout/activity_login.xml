@@ -31,7 +31,7 @@
         android:layout_height="wrap_content"
         android:text="@string/welcome_text"
         android:textSize="17sp"
-        android:textColor="#CBFFFFFF"
+        android:textColor="#FFC0CB"
         android:gravity="center"
         android:fontFamily="@font/robotobold"
         app:layout_constraintBottom_toTopOf="@+id/textView"
